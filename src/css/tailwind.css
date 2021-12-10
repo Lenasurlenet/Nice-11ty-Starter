@@ -19,7 +19,7 @@
   }
 
   section {
-    @apply min-h-screen w-full mx-auto py-6 text-center bg-black grid grid-cols-1 place-items-center
+    @apply w-full mx-auto py-6 text-center grid grid-cols-1 place-items-center
   }
 
   h1 {
@@ -47,7 +47,7 @@
   }
 
   .customContainer {
-    @apply w-5/6 max-w-screen-2xl mx-auto p-6;
+    @apply w-5/6 max-w-screen-2xl mx-auto px-6;
   }
 
   .display {

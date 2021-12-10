@@ -608,12 +608,9 @@ section{
   margin-left: auto;
   margin-right: auto;
   display: grid;
-  min-height: 100vh;
   width: 100%;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   place-items: center;
-  --tw-bg-opacity: 1;
-  background-color: rgb(24 25 31 / var(--tw-bg-opacity));
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   text-align: center;
@@ -751,7 +748,46 @@ a:hover{
   margin-right: auto;
   width: 83.333333%;
   max-width: 1536px;
-  padding: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.display{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.9rem;
+  letter-spacing: -0.032em;
+  font-weight: 800;
+  --tw-text-opacity: 1;
+  color: rgb(167 139 250 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .display{
+    font-size: 2.4rem;
+    letter-spacing: -0.032em;
+  }
+}
+
+@media (min-width: 1024px){
+  .display{
+    font-size: 3rem;
+    letter-spacing: -0.034em;
+  }
+}
+
+@media (min-width: 1280px){
+  .display{
+    font-size: 3.8rem;
+    letter-spacing: -0.034em;
+  }
+}
+
+@media (min-width: 1536px){
+  .display{
+    font-size: 4.7rem;
+    letter-spacing: -0.036em;
+  }
 }
 
 .sr-only{
@@ -779,6 +815,15 @@ a:hover{
   right: 0px;
   bottom: 0px;
   left: 0px;
+}
+
+.inset-y-0{
+  top: 0px;
+  bottom: 0px;
+}
+
+.-left-16{
+  left: -4rem;
 }
 
 .z-10{
@@ -818,6 +863,14 @@ a:hover{
   margin-top: 0.25rem;
 }
 
+.block{
+  display: block;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
 .flex{
   display: flex;
 }
@@ -854,8 +907,24 @@ a:hover{
   height: 1.5rem;
 }
 
+.h-64{
+  height: 16rem;
+}
+
+.h-screen{
+  height: 100vh;
+}
+
 .max-h-\[320px\]{
   max-height: 320px;
+}
+
+.max-h-\[520px\]{
+  max-height: 520px;
+}
+
+.max-h-\[620px\]{
+  max-height: 620px;
 }
 
 .w-5{
@@ -864,6 +933,14 @@ a:hover{
 
 .w-6{
   width: 1.5rem;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.w-16{
+  width: 4rem;
 }
 
 .max-w-screen-2xl{
@@ -944,6 +1021,10 @@ a:hover{
   border-radius: 0.5rem;
 }
 
+.rounded-xl{
+  border-radius: 0.75rem;
+}
+
 .border{
   border-width: 1px;
 }
@@ -977,6 +1058,11 @@ a:hover{
 
 .bg-no-repeat{
   background-repeat: no-repeat;
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-2{
@@ -1017,6 +1103,31 @@ a:hover{
   padding-bottom: 0.75rem;
 }
 
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -1037,6 +1148,16 @@ a:hover{
 
 .text-base{
   font-size: 1rem;
+  letter-spacing: -0.03em;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  letter-spacing: -0.032em;
+}
+
+.text-xl{
+  font-size: 1.25rem;
   letter-spacing: -0.03em;
 }
 
@@ -1097,6 +1218,11 @@ a:hover{
     padding-bottom: 9rem;
   }
 
+  .sm\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .sm\:pr-0{
     padding-right: 0px;
   }
@@ -1111,8 +1237,8 @@ a:hover{
     letter-spacing: -0.03em;
   }
 
-  .sm\:text-4xl{
-    font-size: 2.4rem;
+  .sm\:text-3xl{
+    font-size: 1.9rem;
     letter-spacing: -0.032em;
   }
 }
@@ -1126,8 +1252,27 @@ a:hover{
     margin-left: 0px;
   }
 
+  .md\:flex{
+    display: flex;
+  }
+
   .md\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:py-24{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .md\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .md\:py-12{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .md\:text-2xl{
@@ -1139,9 +1284,18 @@ a:hover{
     font-size: 1.15rem;
     letter-spacing: -0.03em;
   }
+
+  .md\:text-base{
+    font-size: 1rem;
+    letter-spacing: -0.03em;
+  }
 }
 
 @media (min-width: 1024px){
+  .lg\:block{
+    display: block;
+  }
+
   .lg\:flex{
     display: flex;
   }
@@ -1150,11 +1304,47 @@ a:hover{
     height: 100vh;
   }
 
+  .lg\:h-full{
+    height: 100%;
+  }
+
+  .lg\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:grid-cols-6{
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .lg\:items-center{
     align-items: center;
+  }
+
+  .lg\:rounded-xl{
+    border-radius: 0.75rem;
+  }
+
+  .lg\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .lg\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .lg\:py-24{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .lg\:py-12{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .lg\:pl-4{
+    padding-left: 1rem;
   }
 }
