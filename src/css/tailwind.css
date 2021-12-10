@@ -19,7 +19,7 @@
   }
 
   section {
-    @apply min-h-screen w-full max-w-screen-2xl mx-auto py-6 text-center bg-black grid grid-cols-1 place-items-center
+    @apply min-h-screen w-full mx-auto py-6 text-center bg-black grid grid-cols-1 place-items-center
   }
 
   h1 {
@@ -39,15 +39,15 @@
   }
 
   p {
-    @apply font-sans text-base text-white md:text-lg
+    @apply font-sans text-base text-white md:text-lg;
   }
 
   a {
-    @apply text-blue text-base
+    @apply text-base text-black md:text-lg font-medium;
   }
 
   .customContainer {
-    @apply w-5/6 max-w-screen-2xl mx-auto p-6
+    @apply w-5/6 max-w-screen-2xl mx-auto p-6;
   }
 
   .display {
