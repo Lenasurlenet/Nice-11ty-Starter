@@ -43,7 +43,7 @@
   }
 
   a {
-    @apply text-base text-black md:text-lg font-medium;
+    @apply text-base text-black hover:opacity-75 md:text-lg font-medium;
   }
 
   .customContainer {

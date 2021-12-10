@@ -731,6 +731,10 @@ a{
   color: rgb(24 25 31 / var(--tw-text-opacity));
 }
 
+a:hover{
+  opacity: 0.75;
+}
+
 @media (min-width: 768px){
   a{
     font-size: 1.15rem;
@@ -790,12 +794,20 @@ a{
   margin-top: 1rem;
 }
 
+.mt-8{
+  margin-top: 2rem;
+}
+
 .flex{
   display: flex;
 }
 
 .inline-flex{
   display: inline-flex;
+}
+
+.grid{
+  display: grid;
 }
 
 .hidden{
@@ -818,14 +830,6 @@ a{
   height: 100%;
 }
 
-.max-h-\[720px\]{
-  max-height: 720px;
-}
-
-.max-h-\[620px\]{
-  max-height: 620px;
-}
-
 .max-h-\[320px\]{
   max-height: 320px;
 }
@@ -842,6 +846,14 @@ a{
   max-width: 65ch;
 }
 
+.max-w-3xl{
+  max-width: 48rem;
+}
+
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .items-center{
   align-items: center;
 }
@@ -850,8 +862,16 @@ a{
   justify-content: flex-end;
 }
 
+.justify-center{
+  justify-content: center;
+}
+
 .justify-between{
   justify-content: space-between;
+}
+
+.gap-4{
+  gap: 1rem;
 }
 
 .space-x-10 > :not([hidden]) ~ :not([hidden]){
@@ -864,6 +884,12 @@ a{
   --tw-space-x-reverse: 0;
   margin-right: calc(2rem * var(--tw-space-x-reverse));
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .rounded-lg{
@@ -910,8 +936,17 @@ a{
   padding-bottom: 6rem;
 }
 
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .text-left{
   text-align: left;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .text-3xl{
@@ -954,6 +989,10 @@ a{
   color: rgb(24 25 31 / var(--tw-text-opacity));
 }
 
+.hover\:opacity-75:hover{
+  opacity: 0.75;
+}
+
 @media (min-width: 640px){
   .sm\:flex{
     display: flex;
@@ -961,6 +1000,10 @@ a{
 
   .sm\:hidden{
     display: none;
+  }
+
+  .sm\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .sm\:py-36{
@@ -997,6 +1040,10 @@ a{
 
   .lg\:h-screen{
     height: 100vh;
+  }
+
+  .lg\:grid-cols-6{
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .lg\:items-center{
