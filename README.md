@@ -2,8 +2,9 @@
 11ty  and Tailwindcss starter. it come with the path for fonts, colors, and typography to facilitate the addition of your style guide. Tailwind plugins have been added: Forms, Typography, Line-clamp and aspect-ratio.
 
 
-* [View on Netlify](https://jetplus.netlify.app/)
-* [View on GitHub](https://github.com/Lenasurlenet/jetPlus)
+* [View on Netlify](https://12th.netlify.app/)
+* [View on GitHub](https://github.com/Lenasurlenet/Nice-11ty-Starter
+)
 
 ## Goal
 Develop [Eleventy](https://www.11ty.dev/) and [Tailwind CSS](https://tailwindcss.com/) websites even faster.
